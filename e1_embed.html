@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedding javascreipt into HTML using 3 ways</title>
+    <script src="e1_embed.js"></script>
+</head>
+<body>
+    <h1 id="demo">Krishna here</h1>
+    <button type="button" onclick="func()">Internal</button>
+    <button type="button" onclick="alert('Hello Krishna')">Inline</button>
+    <button type="button" onclick="rep()">External</button>
+    <script>
+        function func()
+        {
+            document.getElementById("demo").innerHTML = "Internal JS";
+        }
+    </script>
+</body>
+</html>
