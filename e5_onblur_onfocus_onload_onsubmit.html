@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blur focus submit load</title>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg" alt="napoleon bonaparade" height="256" width="180" onload="loa()">
+    <form onsubmit="alert('Form was submitted');">
+        <label for="ip">Name : 
+        <input id="ip" type="text" onfocus="foc()" onblur="blu()">
+        </label>
+        <input type="submit">
+    </form>
+    <script>
+        function foc()
+        {
+            document.getElementById("ip").style.backgroundColor="red";
+            console.log("Input element recxeived focus");
+        }
+        function blu()
+        {
+            document.getElementById("ip").style.backgroundColor="blue";
+            console.log("Input element lost focus");
+        }
+        function loa()
+        {
+            console.log("Napoleon's image loaded");
+        }
+    </script>
+</body>
+</html>

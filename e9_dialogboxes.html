@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog boxes</title>
+</head>
+<body>
+    <h2>Dialog boxes demo</h2>
+    <button type="button" onclick="alert('Alert box')">Alert</button>
+    <button type="button" onclick="con()">Confirm</button>
+    <button type="button" onclick="pro()">Prompt</button>
+    <script>
+        function con()
+        {
+            let x = confirm("Do you want to print Hello World or not?");
+            if(x==0)
+            {
+                console.log("User clicked cancel");
+            }
+            else
+            {
+                console.log("Hello World!");
+            }
+        }
+        function pro()
+        {
+            let a, b;
+        a = prompt("Enter first number : ");
+        a = Number.parseInt(a);
+        b = prompt("Enter second number : ");
+        b = Number.parseInt(b);
+        if(a>b)
+        {
+            alert(a + " is greater than " + b);
+        }
+        else
+        {
+            alert(b + " is greater than " + a);
+        }    
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refer filename</title>
+</head>
+<body>
+    <h1 onmouseover="console.log('mouse in');" onmouseout="console.log('mouse out');">onmouseover & onmouseout</h1>
+    <label for="ip">
+        Something <input type="text" id="ip" onkeypress="col()" placeholder="onkeypress">
+    </label>
+    <script>
+        function col()
+        {
+            document.getElementById("ip").style.backgroundColor="green";
+        }
+    </script>
+</body>
+</html>

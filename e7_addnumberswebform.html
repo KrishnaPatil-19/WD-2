@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add two numbers using web form</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="num1" id="num1">
+        <br><br>
+        <input type="text" placeholder="num2" id="num2">
+    </form>
+    <br>
+    <input type="text" placeholder="result" id="res">
+    <button type="button" onclick="add()">Calc</button>
+    <script>
+        function add()
+        {
+            let x, y, res;
+            x = parseInt(document.getElementById("num1").value);
+            y = parseInt(document.getElementById("num2").value);
+            res = x + y;
+            document.getElementById("res").value = res;
+        }
+    </script>
+</body>
+</html>
